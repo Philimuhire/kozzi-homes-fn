@@ -3,11 +3,15 @@ module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        outfit: ['Outfit', 'sans-serif'], 
+      },
       colors: {
-        primary: '#08447D',
-        secondary: '#ACCCFF',
-        third: '#D8A31A',
-        forth: '#F1F1E6',
+        primary: '#4CAF50',
+        secondary: '#FF6F61',
+        third: '#FFFFFF',
+        forth: '#8E7409',
+        fifth: '#333333'
       },
     },
   },

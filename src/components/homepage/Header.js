@@ -1,20 +1,35 @@
 import React from 'react';
+import logo from '../../images/logo.png';
 
 const Header = () => {
+
   return (
-    <header className="bg-green-500 p-4 flex justify-between items-center text-white">
-      <div className="font-bold text-xl">KOZZI HOMES</div>
-      <nav className="space-x-4">
-        <a href="#" className="hover:underline">Home</a>
-        <a href="#" className="hover:underline">About Us</a>
-        <a href="#" className="hover:underline">Products</a>
-        <a href="#" className="hover:underline">Contact Us</a>
-      </nav>
-      <div className="space-x-4">
-        <span className="material-icons">shopping_cart</span>
-        <span className="material-icons">favorite</span>
-        <span className="material-icons">person</span>
-      </div>
+    <header className="bg-primary text-third shadow-md font-outfit text-lg">
+      <div className="container mx-auto px-4 py-4 flex items-center gap-x-36">
+        <div className="flex items-center">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-8 w-8 sm:h-10 sm:w-10"
+          />
+          <h1 className="text-xl font-semibold ml-2">KozziHomes</h1>
+        </div>
+
+        <nav className="hidden sm:flex space-x-6">
+          <a href="#home" className="hover:text-green-600">
+            Home
+          </a>
+          <a href="#about" className="hover:text-green-600">
+            About Us
+          </a>
+          <a href="#products" className="hover:text-green-600">
+            Products
+          </a>
+          <a href="#contact" className="hover:text-green-600">
+            Contact Us
+          </a>
+        </nav>
+        </div>
     </header>
   );
 };
